@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>
+          
+
+        </title>
+
+        <link rel="stylesheet" href="logreg.css" >
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+
+<script src="script.js"></script>
+    </head>
+    <body>
+        
+        <div class="hero">
+            <div class="form-box">
+           <div>
+               <div class="logo">
+                   <img src="logo.png" alt="logo"> <h2>CAR RENTALS</h2>
+               </div>
+           </div>
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn"  onclick="login()">Login</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                </div>
+                <div class="social-icons">
+                    <img src="fb.png">
+                    <img src="twit.jpg">
+                    <img src="insta.jpg">
+                    <img src="mail.jpg">
+                </div>
+                <div class="input-group" id="Login"  >
+                    <input type="text" id="email" class="input-field"  placeholder="User Id"  >
+                    <input type="text" id="password" class="input-field" placeholder="Password" >
+                    <input type ="checkbox"   class="check-box"><span>Remember Password</span>
+                    <input type="submit"  value="Log in" class="submit-btn" onclick="loginn()" >
+					
+				
+                </div>
+                <form class="input-group"  id="Register"> 
+                    <input type="text" class="input-field" id="fname" name="fname" placeholder="First Name">
+                    <input type="text" class="input-field" id="lname" name="lname" placeholder="Last Name" >
+					  <input type="text" class="input-field" id="emaill" name="emaill"  placeholder="Email Id">
+					 <input type="text" class="input-field" id="pass"  name="pass"  placeholder="Password" >
+                    <input type="text" class="input-field" id="cpass" name="cpass" placeholder="Confirm Password" >
+                  
+                    <label for="cars" class="input-field">Choose a car:</label>
+                        <select name="cars" id="cars" style="min-width:200px;">
+                            <option value="">Select</option>
+                            <option value="SPORTS">SPORTS</option>
+                            <option value="SEDAN">SEDAN</option>
+                             <option value="OTHERS">OTHERS</option>
+                        </select>
+                        <input type="text" class="input-field" id="no" name="no" placeholder="Driving Licence Number"><br> <br>
+                    <input type="button" class="submit-btn" value="REGISTER" id="clikk" name="clikk" onclick="validation()">
+                </form>
+            </div>
+            
+        </div>
+       <script>
+            var x= document.getElementById("Login");
+            var y= document.getElementById("Register");
+            var z= document.getElementById("btn");
+            function register(){
+                x.style.left="-400px";
+                y.style.left="2px";
+                z.style.left="110px";
+            }
+            function login(){
+                x.style.left="2px";
+                y.style.left="450px";
+                z.style.left="0px";
+            }
+        </script>
+		
+    </body>
+</html>
