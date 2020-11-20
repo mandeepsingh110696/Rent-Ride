@@ -10,53 +10,73 @@ var firebaseConfig = {
  // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   
-
-  
-  // var con= firebase.database().ref('users');
-  // document.getElementById("Register").addEventListener("submit",(e)=>{
-	  // e.preventDefault();
-	  // var userinfo=con.push();
-	  // userinfo.set({
-	  // fname:getId("fname"),
-	   // lname:getId("lname"),
-	    // email:getId("email"),
-		 // pass:getId("pass"),
-		  // cpass:getId("cpass"),
-		    // cars:getId("cars"),
-		   // no:getId("no")
-	  // });
-      // alert("sent");
-	  // console.log("sent");
-      // document.getElementById("Register").reset();
-  // });	  
-	  
-	  // function getId(id)
-	  // {
-		  // return document.getElementById(id).value;
-	  // }
-  
-	function loginn(){
-		
-		
-		
-		debugger;
-		var _email = document.getElementById("email");
-		var _password = document.getElementById("password");
-		
-		
+	function loginn(_email,_password){
      firebase.database().ref("user").push({
-     email:_email.value,
-     password:_password.value
+     email:_email,
+     password:_password
       });
 
 		const auth = firebase.auth();
-		const promise = auth.createUserWithEmailAndPassword(_email.value, _password.value);
+		const promise = auth.createUserWithEmailAndPassword(_email, _password);
 		//promise.catch(e => alert(e.message));
 		
 		alert("Login Sucessfully");
 		
 		
+	
 	}
+	
+		function loginnvalidate(){
+
+		
+
+			
+		
+	
+	
+		var _email = document.getElementById("email").value;
+		var _pass = document.getElementById("password").value
+		
+		
+		
+		
+		 if(_email == ""){
+				document.getElementById('email').innerHTML =alert(" ** Please fill the email id` field");
+				return false;
+			}
+			
+			 else if(_email.indexOf('@') <= 0 ){
+				document.getElementById('email').innerHTML =alert(" ** missing or  Invalid @  Position");
+				return false;
+			}
+ 
+			else if((_email.charAt(_email.length-4)!='.') && (_email.charAt(_email.length-3)!='.')){
+				document.getElementById('email').innerHTML =alert(" **missing or Invalid . Position");
+				return false;
+			} 
+ 
+
+	       else   if(_pass== ""){
+				document.getElementById('password').innerHTML =alert(" ** Please fill the password field");
+				return false;
+			}
+		   else	if((_pass.length <= 5) || (_pass.length > 20)) {
+				document.getElementById('password').innerHTML =alert(" ** Passwords length must be between  5 and 20");
+				return false;	
+			}
+ 
+			
+			else
+			{
+				loginn(_email,_pass);
+				return true;
+			    
+				
+				
+			}
+		
+
+		}
 	
 	function registerr(_fname,_lname,_pass,_cpass,_email,_cars,_no)
 	{
@@ -162,7 +182,7 @@ var firebaseConfig = {
 				return false;
 			}
 		 else	if((_pass.length <= 5) || (_pass.length > 20)) {
-				document.getElementById('pass').innerHTML =alert(" ** Passwords lenght must be between  5 and 20");
+				document.getElementById('pass').innerHTML =alert(" ** Passwords length must be between  5 and 20");
 				return false;	
 			}
  
