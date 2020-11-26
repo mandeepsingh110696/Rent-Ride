@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <!-- This will generate the title of the page -->
+  <title>Productdetail</title>
+  <!-- This section will link the html file to css file -->
+  <link rel="stylesheet" href="Productdetail.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- this div tag is used for navigation bar and for logo-->
+  <div class="nav">
+    <table>
+      <!-- Here we define the row element for navbar -->
+      <tr>
+        <!-- Here we define the column element for logo -->
+        <td>
+          <!-- Here we are providing the image of logo and for styling we are using cover class which is defined in css class  -->
+          <h2> <img src="logo.png" class="cover"> </h2>
+        </td>
+        <!-- Here we define the column element for hyperlinks for other pages -->
+        <td>
+          <!-- Here are the hyperlinks using anchor tag -->
+         <!--  <a href="Home.html">Home</a>
+                    <a href="Product.html">Cars </a>
+                    <a class="active" href="Contactus.html">Contact Us</a> -->
+                    <!-- <a href="Contactus.html">Contact us</a> -->
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- 
+This section we made is more generic as it contans one outer div called odd and two inner divs callled one and two.
+one and two are two css classes which we will discuss further in our css class but briefly we can say it will divide the container into
+two portions in which one will contain content and other one will image.  -->
+  <!-- This class called one contain the code to generate image of specific shape using clip-path -->
+  <div class="odd">
+    <div class="one"></div>
+    <!-- This inline css is just providing the margin top for minor adjustments along with the class one which is defined in the css file -->
+    <div class="two" style="margin-top: 150px;">
+      <!-- Basically for content section we prefer to use span tag as its more flexible  -->
+      <span id="namecar" name="namecar">FERARI 488 GTB</span>
+      <br>
+      <br>
+      <br>
+      <span  >Engine and Power</span>
+      <!-- This inline css is just providing the color and background color  along with the model specification-->
+      <span style="color: white;background-color:  black;" id="engine" name="engine">V8 bi-turbo / 660 chevaux</span>
+      <br>
+      <br>
+      <br>
+      <span >Maximum Speed</span>
+
+      <!-- This inline css is just providing the color and background color  along with the maximum speed-->
+      <span style="color: white;background-color:  black;" id="speed" name="speed">330km/h</span>
+      <br>
+      <br>
+      <br>
+      <!-- This inline css is just providing the color and background color  along with the kilomètrage-->
+      <span >Mileage</span>
+      <span style="color: white;background-color:  black;" id="milli" name="milli">1500km</span>
+      <br>
+      <br>
+      <br>
+      <!-- This inline css is just providing the color and background color  along with the minimum age-->
+      <span >Minimum Age</span>
+      <span style="color: white;background-color:  black;" id="age" name="age">21 years</span>
+      <br>
+      <br>
+      <br>
+      <!-- This inline css is just providing the color and background color  along with the security amount-->
+      <span >Security Deposit</span>
+      <span style="color: white;background-color:  black;" id="depo" name="depo">10000$</span><br>
+        <button  id="button" class="button buttoneff"style="margin-left: 470px;"  onclick="passValues(1)" >Rent Now</button>  
+	   
+
+
+
+	</div>
+</div>
+
+
+    </div>
+  </div>
+
+  <!-- 
+This section we made is more generic as it contans one outer div called even and two inner divs called one and two.
+one and two are two css classes which we will discuss further in our css class but briefly we can say it will divide the container into
+two portions in which one will contain content and other one will image.  -->
+
+  <div class="even">
+    <!-- This inline css is just providing the margin left for adjustments along with the class three which is defined in the css file -->
+    <div class="three" style="margin-left: -333px; ">
+      <br>
+      <br>
+      <br>
+      <br>
+      <!-- Basically for content section we prefer to use span tag as its more flexible  -->
+      <span id="namecar2" name="namecar2">LAMBORGHINI HURACAN </span>
+      <br>
+      <span>SPYDER</span>
+      <br>
+      <br>
+      <br>
+      <span>Moteur et puissance</span>
+      <br>
+      <!-- This inline css is just providing the color and background color  along with the model specification-->
+      <span style="color: white;background-color:  black;" id="engine2" name="engine2">V10 / 640 chevaux</span>
+      <br>
+      <br>
+      <br>
+      <span>Vitesse maximale</span>
+
+      <br>
+      <!-- This inline css is just providing the color and background color  along with the maximum speed-->
+      <span style="color: white;background-color:  black;" id="speed2" name="speed2">345km/h</span>
+      <br>
+      <br>
+      <br>
+      <span>kilomètrage</span>
+      <br>
+      <!-- This inline css is just providing the color and background color  along with the kilomètrage-->
+      <span style="color: white;background-color:  black;"id="milli2" name="milli2">2700km</span>
+      <br>
+      <br>
+      <br>
+      <span>Âge minimum</span>
+      <br>
+      <!-- This inline css is just providing the color and background color  along with the minimum age-->
+      <span style="color: white;background-color:  black;" id="age2" name="age2">21 ans</span>
+      <br>
+      <br>
+      <br>
+      <span>Dépôt de sécurité</span>
+      <br>
+      <!-- This inline css is just providing the color and background color  along with the security amount-->
+      <span style="color: white;background-color:  black;" id="depo2" name="depo2">10000$</span><br>
+	    <button style="margin-left: 470px;" class="button buttoneff" onclick="passValuesTwo(2)">Rent Now</button><br> 
+	   
+
+
+
+    </div>
+    <!-- This section will contain the image of desired shape in which class four contain all the code which is described in class four in css file -->
+    <div class="four">
+
+    </div>
+
+
+  </div>
+  <!-- 
+This section we made is more generic as it contans one outer div called odd and two inner divs callled one and two.
+one and two are two css classes which we will discuss further in our css class but briefly we can say it will divide the container into
+two portions in which one will contain content and other one will image.  -->
+  <div class="odd">
+    <!-- This section will contain the image of desired shape in which class five contain all the code which is described in class four in css file -->
+    <div class="five"></div>
+    <!-- This inline css is just providing the margin right for  minor adjustments along with the class six which is defined in the css file -->
+    <div class="six" style="margin-right: -25px;">
+      <br>
+      <br>
+      <br>
+      <br>
+      <!-- Basically for content section we prefer to use span tag as its more flexible  -->
+      <span id="namecar3" name="namecar3">PORCHE 911 GT3 RS</span>
+      <br>
+      <br>
+      <br>
+      <span>Moteur et puissance</span>
+      <!-- This inline css is just providing the color and background color  along with the model specification-->
+      <span style="color: white;background-color:  black;" id="engine3" name="engine3">6-cylindre à plat / 500 chevaux</span>
+      <br>
+      <br>
+      <br>
+      <span>Vitesse maximale</span>
+
+      <!-- This inline css is just providing the color and background color  along with the maximum speed-->
+      <span style="color: white;background-color:  black;" id="speed3" name="speed3">315km/h</span>
+      <br>
+      <br>
+      <br>
+      <span>kilomètrage</span>
+      <!-- This inline css is just providing the color and background color  along with the kilomètrage-->
+      <span style="color: white;background-color:  black;" id="milli3" name="milli3">590km</span>
+      <br>
+      <br>
+      <br>
+      <span>Âge minimum</span>
+      <!-- Basically for content section we prefer to use span tag as its more flexible  -->
+      <span style="color: white;background-color:  black; " id="age3" name="age3">21 ans</span>
+      <br>
+      <br>
+      <br>
+      <span>Dépôt de sécurité</span>
+      <!-- This inline css is just providing the color and background color  along with the security-->
+      <span style="color: white;background-color:  black;" id="depo3" name="depo3">9000$</span><br>
+	    <button style="margin-left: 470px;" class="button buttoneff" onclick="passValuesThree(3)">Rent Now</button> 
+	   
+	  
+    </div>
+
+  </div>
+  <!-- 
+This section we made is more generic as it contans one outer div called even and two inner divs callled one and two.
+one and two are two css classes which we will discuss further in our css class but briefly we can say it will divide the container into
+two portions in which one will contain content and other one will image.  -->
+  <div class="even">
+    <!-- This inline css is just providing the margin left for  adjustments along with the class seven which is defined in the css file -->
+    <div class="seven" style="margin-left: -333px;">
+      <br>
+      <br>
+      <br>
+      <br>
+      <!-- Basically for content section we prefer to use span tag as its more flexible  -->
+      <span id="namecar4" name="namecar4">TESLA MODEL X P100D</span>
+      <br>
+      <br>
+      <br>
+      <span>Moteur et puissance</span>
+      <br>
+      <!-- This inline css is just providing the color and background color  along with the model specification-->
+      <span style="color: white;background-color:  black;" id="engine4" name="engine4">Électrique / 600 chevaux</span>
+      <br>
+      <br>
+      <br>
+      <span>Vitesse maximale</span>
+
+      <br>
+      <!-- This inline css is just providing the color and background color  along with the maximum speed-->
+      <span style="color: white;background-color:  black;" id="speed4" name="speed4">250km/h</span>
+      <br>
+      <br>
+      <br>
+      <span>kilomètrage</span>
+      <br>
+      <!-- This inline css is just providing the color and background color  along with the kilomètrage-->
+      <span style="color: white;background-color:  black;" id="milli4" name="milli4">2100km</span>
+      <br>
+      <br>
+      <br>
+      <span>Âge minimum</span>
+      <br>
+      <!-- This inline css is just providing the color and background color  along with the minimum age-->
+      <span style="color: white;background-color:  black;" id="age4" name="age4">18 ans</span>
+      <br>
+      <br>
+      <br>
+      <span>Dépôt de sécurité</span>
+      <br>
+      <!-- This inline css is just providing the color and background color  along with the security amount-->
+      <span style="color: white;background-color:  black;" id="depo4" name="depo4">8000$</span><br>
+	   <button style="margin-left: 470px;" class="button buttoneff" onclick="passValuesFour(4)">Rent Now</button>
+	  
+    </div>
+    <!-- This section will contain the image of desired shape in which class four contain all the code which is described in class four in css file -->
+    <div class="eight"></div>
+
+  </div>
+
+  <!-- 
+This section we made is more generic as it contans one outer div called odd and two inner divs callled one and two.
+one and two are two css classes which we will discuss further in our css class but briefly we can say it will divide the container into
+two portions in which one will contain content and other one will image.  -->
+  <div class="odd">
+    <!-- This section will contain the image of desired shape in which class nine contain all the code which is described in class four in css file -->
+    <div class="nine"></div>
+
+    <div class="ten">'
+      <br>
+      <br>
+      <br>
+      <br>
+      <!-- Basically for content section we prefer to use span tag as its more flexible  -->
+      <span id="namecar5" name="namecar5">TOYOTA SUPRA 2020 MK5</span>
+      <br>
+      <br>
+      <br>
+      <span>Moteur et puissance</span>
+      <!-- This inline css is just providing the color and background color  along with the model specification-->
+      <span style="color: white;background-color:  black;" id="engine5" name="engine5">6-cylindres turbo / 376 chevaux</span>
+      <br>
+      <br>
+      <br>
+      <span>Vitesse maximale</span>
+
+      <!-- This inline css is just providing the color and background color  along with the maximum speed-->
+      <span style="color: white;background-color:  black;" id="speed5" name="speed5">250km/h</span>
+      <br>
+      <br>
+      <br>
+      <span>kilomètrage</span>
+      <!-- This inline css is just providing the color and background color  along with the kilomètrage -->
+      <span style="color: white;background-color:  black;" id="milli5" name="milli5">150km</span>
+      <br>
+      <br>
+      <br>
+      <span>Âge minimum</span>
+      <!-- This inline css is just providing the color and background color  along with the minimum age -->
+      <span style="color: white;background-color:  black;" id="age5" name="age5">20 ans</span>
+      <br>
+      <br>
+      <br>
+      <span>Dépôt de sécurité</span>
+      <!-- This inline css is just providing the color and background color  along with the security amount -->
+      <span style="color: white;background-color:  black;" id="depo5" name="depo5">6000$</span><br>
+       <button style="margin-left: 470px;" class="button buttoneff" onclick="passValuesFive(5)">Rent Now</button>
+	   
+    </div>
+
+  </div>
+  <!-- 
+This section we made is more generic as it contans one outer div called even and two inner divs callled one and two.
+one and two are two css classes which we will discuss further in our css class but briefly we can say it will divide the container into
+two portions in which one will contain content and other one will image.  -->
+
+  <div class="even">
+
+    <!-- This inline css is  just providing the margin left for  adjustments and calling the class eleven which is defined in the css file -->
+    <div class="eleven" style="margin-left: -333px;">
+      <br>
+      <br>
+      <br>
+      <br>
+      <!-- Basically for content section we prefer to use span tag as its more flexible  -->
+      <span id="namecar6" name="namecar6">TESLA MODEL S P100D</span>
+      <br>
+      <br>
+      <br>
+      <span>Moteur et puissance</span>
+      <br>
+      <!-- This inline css is just providing the color and background color  along with the model specification-->
+      <span style="color: white;background-color:  black;" id="engine6" name="engine6">Électrique / 600 chevaux</span>
+      <br>
+      <br>
+      <br>
+      <span>Vitesse maximale</span>
+
+      <br>
+      <!-- This inline css is just providing the color and background color  along with the maximum speed -->
+      <span style="color: white;background-color:  black;" id="speed6" name="speed6">250km/h</span>
+      <br>
+      <br>
+      <br>
+      <span>kilomètrage</span>
+      <br>
+      <!-- This inline css is just providing the color and background color  along with the kilomètrage -->
+      <span style="color: white;background-color:  black;" id="milli6" name="milli6">29km</span>
+      <br>
+      <br>
+      <br>
+      <span>Âge minimum</span>
+      <br>
+      <!-- This inline css is just providing the color and background color  along with the minimum age -->
+      <span style="color: white;background-color:  black;" id="age6" name="age6">18 ans</span>
+      <br>
+      <br>
+      <br>
+      <span>Dépôt de sécurité</span>
+      <br>
+      <!-- This inline css is just providing the color and background color  along with the security amount -->
+      <span style="color: white;background-color:  black;" id="depo6" name="depo6">5000$</span><br>
+	   <button style="margin-left: 470px;" class="button buttoneff" onclick="passValuesSix(6)">Rent Now</button>
+    </div>
+    <!-- This section will contain the image of desired shape in which class twelve contain all the code which is described in class four in css file -->
+    <div class="twelve"></div>
+
+  </div>
+  <!-- 
+This section we made is more generic as it contans one outer div called odd and two inner divs callled one and two.
+one and two are two css classes which we will discuss further in our css class but briefly we can say it will divide the container into
+two portions in which one will contain content and other one will image.  -->
+  <div class="odd">
+    <!-- This section will contain the image of desired shape in which class thirteen contain all the code which is described in class four in css file -->
+    <div class="thirteen"></div>
+    <!-- This inline css is calling the class eleven which is defined in the css file -->
+    <div class="fourteen">
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <!-- Basically for content section we prefer to use span tag as its more flexible  -->
+      <span id="namecar7" name="namecar7">LAMBORGHINI AVENTADOR SVJ </span>
+      <br>
+      <span>ROADSTER</span>
+      <br>
+      <br>
+      <br>
+
+      <span>Moteur et puissance</span>
+      <!-- This inline css is just providing the color and background color  along with the model specification -->
+      <span style="color: white;background-color:  black;" id="engine7" name="engine7">V12 / 770 chevaux</span>
+      <br>
+      <br>
+      <br>
+      <span>Vitesse maximale</span>
+
+      <!-- This inline css is just providing the color and background color  along with the maximum speed-->
+      <span style="color: white;background-color:  black;" id="speed7" name="speed7">351km/h</span>
+      <br>
+      <br>
+      <br>
+      <span>kilomètrage</span>
+      <!-- This inline css is just providing the color and background color  along with the kilomètrage -->
+      <span style="color: white;background-color:  black;" id="milli7" name="milli7">1000km</span>
+      <br>
+      <br>
+      <br>
+      <span>Âge minimum</span>
+      <!-- This inline css is just providing the color and background color  along with the minimum age -->
+      <span style="color: white;background-color:  black;" id="age7" name="age7">21 ans</span>
+      <br>
+      <br>
+      <br>
+      <span>Dépôt de sécurité</span>
+      <!-- This inline css is just providing the color and background color  along with the security amount-->
+      <span style="color: white;background-color:  black;" id="depo7" name="depo7">2000$</span><br>
+	   <button style="margin-left: 470px;" class="button buttoneff" onclick="passValuesSeven(7)">Rent Now</button>
+    </div>
+
+  </div>
+  <!-- 
+This section we made is more generic as it contans one outer div called even and two inner divs callled one and two.
+one and two are two css classes which we will discuss further in our css class but briefly we can say it will divide the container into
+two portions in which one will contain content and other one will image.  -->
+  <div class="even">
+    <!-- This inline css is  just providing the margin left for  adjustments and calling the class fifteen which is defined in the css file -->
+    <div class="fifteen" style="margin-left: -339px;">
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <!-- Basically for content section we prefer to use span tag as its more flexible  -->
+      <span id="namecar8" name="namecar8">LAMBORGHINI HURACAN EVO</span>
+
+      <br>
+      <br>
+      <br>
+
+      <span>Moteur et puissance</span>
+      <br>
+      <!-- This inline css is just providing the color and background color  along with the model specification-->
+      <span style="color: white;background-color:  black;" id="engine8" name="engine8">V10 / 602 chevaux</span>
+      <br>
+      <br>
+      <br>
+      <span>Vitesse maximale</span>
+
+      <br>
+      <!-- This inline css is just providing the color and background color  along with the maxiumum speed-->
+      <span style="color: white;background-color:  black;" id="speed8" name="speed8">330km/h</span>
+      <br>
+      <br>
+      <br>
+      <span>kilomètrage</span>
+      <br>
+      <!-- This inline css is just providing the color and background color  along with the kilomètrage-->
+      <span style="color: white;background-color:  black;" id="milli8" name="milli8">1780km</span>
+      <br>
+      <br>
+      <br>
+      <span>Âge minimum</span>
+      <br>
+      <!-- This inline css is just providing the color and background color  along with the minimum age -->
+      <span style="color: white;background-color:  black;" id="age8" name="age8">21 ans</span>
+      <br>
+      <br>
+      <br>
+      <span>Dépôt de sécurité</span>
+      <br>
+      <!-- This inline css is just providing the color and background color  along with the security amount-->
+      <span style="color: white;background-color:  black;" id="depo8" name="depo8">1800$</span><br>
+	   <button style="margin-left: 470px;" class="button buttoneff" onclick="passValuesEight(8)">Rent Now</button>
+    </div>
+    <!-- This section will contain the image of desired shape in which class sixteen contain all the code which is described in class four in css file -->
+    <div class="sixteen"></div>
+
+  </div>
+  </section>
+
+
+
+
+
+
+</body>
+
+</html>

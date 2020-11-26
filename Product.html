@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Product.css" type="text/css" />
+    <title>Product</title>
+	
+	<script src="script.js"></script>
+</head>
+
+<body>
+    <!-- this div tag is used for navigation bar and for logo-->
+    <div class="nav">
+        <table>
+            <!-- Here we define the row element for navbar -->
+            <tr>
+                <!-- Here we define the column element for logo -->
+                <td>
+
+                    <!-- Here we are providing the image of logo and for styling we are using cover class which is defined in css class  -->
+                    <h2> <img src="logo.png" class="cover"> </h2>
+                </td>
+                <!-- Here we define the column element for hyperlinks for other pages -->
+                <td>
+                    <!-- Here are the hyperlinks using anchor tag -->
+                <a href="Home.html">Home</a>
+                    <a href="Product.html">Cars </a>
+                    <a class="active" href="Contactus.html">Contact Us</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- we have used div tag to display the images in main area of the page -->
+    <div class="grid-container">
+        <div class="item1"><img src="image 4.png">
+            <!-- this div tag is used for displaying the text with overlay background -->
+            <div class="content">
+                <Button class="button buttoneff" onclick="productDetail()">VOIR LES <br>DÉTAILS</Button>
+            </div>
+            <!-- p tag is used for displaying the name of the car and its model with the price per hour -->
+            <p class="left-top"> &nbsp; &nbsp; &nbsp; &nbsp; FERRARI 488 GTB <br>4599$/jour</p>
+        </div>
+        <div class="item2"><img src="image12.png">
+            <div class="content1">
+                <Button class="button buttoneff" onclick="productDetail()">VOIR LES <br>DÉTAILS</Button>
+            </div>
+            <p class="right-top"> &nbsp; &nbsp; &nbsp; &nbsp; LAMBORGHINI HURACAN SPYDER <br>4500$/jour</p>
+        </div>
+        <div class="item3"><img src="image 5.png">
+            <div class="content2">
+                <Button class="button buttoneff" onclick="productDetail()">VOIR LES <br>DÉTAILS</Button>
+            </div>
+            <p class="middle-top"> &nbsp; &nbsp; &nbsp; &nbsp; PORSHE 911 GT3RS<br>3100$/jour</p>
+        </div>
+        <div class="item4"><img src="image 9.png">
+            <div class="content3">
+                <Button class="button buttoneff" onclick="productDetail()">VOIR LES <br>DÉTAILS</Button>
+            </div>
+            <p class="middle"> &nbsp; &nbsp; &nbsp; &nbsp; TESLA MODEL X P100D<br>2394$/jour</p>
+        </div>
+        <div class="item5"><img src="image 7.png">
+            <div class="content4">
+                <Button class="button buttoneff" onclick="productDetail()">VOIR LES <br>DÉTAILS</Button>
+            </div>
+            <p class="middle-bottom"> &nbsp; &nbsp; &nbsp; &nbsp; TOYOTA SUPRA MK5<br>1900$/jour</p>
+        </div>
+        <div class="item6"><img src="image11.png">
+            <div class="content5">
+                <Button class="button buttoneff" onclick="productDetail()">VOIR LES <br>DÉTAILS</Button>
+            </div>
+            <p class="middle-right">&nbsp; &nbsp; &nbsp; &nbsp; TESLA MODEL S P100D<br>1899$/jour</p>
+        </div>
+        <div class="item7"><img src="image 3.png">
+            <div class="content6">
+                <Button class="button buttoneff" onclick="productDetail()">VOIR LES <br>DÉTAILS</Button>
+            </div>
+            <p class="bottom-left">&nbsp; &nbsp; &nbsp; &nbsp; AVENTADOR SVJ 63 ROADSTER<br>4900$/jour</p>
+        </div>
+        <div class="item8"><img src="image 8.png">
+            <div class="content7">
+                <Button class="button buttoneff " onclick="productDetail()">VOIR LES <br>DÉTAILS</Button>
+            </div>
+            <p class="bottom-right">&nbsp; &nbsp; &nbsp; &nbsp; LAMBORGHINI HIRICAN EVO<br>4000$/jour</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
